@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AbnaSoftware — Indie mobile games</title>
+  <meta name="description" content="Colorful, casual mobile games by AbnaSoftware. Play Fruit Haul: Truck Runner and more.">
+  <meta name="theme-color" content="#80deea">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AbnaSoftware — Indie mobile games">
+  <meta property="og:description" content="Colorful, casual mobile games by AbnaSoftware. Play Fruit Haul: Truck Runner and more.">
+  <meta property="og:image" content="assets/app_icon.png">
+
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">AbnaSoftware</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#games">Games</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <p class="eyebrow">Indie mobile games</p>
+        <h1 id="hero-heading">Tiny games, <span>big fun.</span></h1>
+        <p class="lede">AbnaSoftware builds colorful, casual mobile games that are easy to pick up and hard to put down. Grab one below and start playing.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#games">Browse games</a>
+          <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/truck.png" alt="The Fruit Haul delivery truck loaded with colorful fruit" width="1000" height="666" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="games" class="section" aria-labelledby="games-heading">
+      <div class="section-head">
+        <h2 id="games-heading">Games</h2>
+        <p>Pick a title to see details, screenshots and store links.</p>
+      </div>
+
+      <ul class="games-grid" role="list">
+        <li class="game-card">
+          <a class="game-card-link" href="games/fruit-haul/" aria-labelledby="game-fruit-title">
+            <span class="game-thumb"><img src="assets/app_icon.png" alt="" width="320" height="320" loading="lazy"></span>
+            <span class="game-body">
+              <span class="game-tags">
+                <span class="tag tag-orange">Arcade</span>
+                <span class="tag tag-sky">Runner</span>
+              </span>
+              <span class="game-title" id="game-fruit-title">Fruit Haul: Truck Runner</span>
+              <span class="game-tagline">Drive, dodge &amp; collect fruits in a fun seasonal truck runner.</span>
+              <span class="game-cta">View game →</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="game-card game-card--soon">
+          <div class="game-card-link">
+            <span class="game-thumb game-thumb--soon" aria-hidden="true">✦</span>
+            <span class="game-body">
+              <span class="game-tags"><span class="tag tag-berry">Coming soon</span></span>
+              <span class="game-title">Your next favorite</span>
+              <span class="game-tagline">More games are on the way — this space is ready for them.</span>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="/" style="color:#fff">AbnaSoftware</a>
+        <small style="display:block;margin-top:.4rem">Casual mobile games, made with Flutter.</small>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:abnasoftwaredevelopment@gmail.com">Contact</a>
+      </nav>
+      <small>© <span id="year">2026</span> AbnaSoftware</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
