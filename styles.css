@@ -240,6 +240,7 @@ a.game-card-link:hover { transform: translateY(-6px) rotate(-0.6deg); box-shadow
 .tag-orange { background: rgba(255, 122, 24, 0.14); color: #b14a00; }
 .tag-sky { background: rgba(31, 159, 192, 0.16); color: var(--sky-deep); }
 .tag-berry { background: rgba(255, 61, 119, 0.14); color: #c01250; }
+.tag-lime { background: rgba(111, 185, 31, 0.14); color: #4b8010; }
 .game-title { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; }
 .game-tagline { color: var(--ink-soft); font-size: var(--text-sm); }
 .game-cta { margin-top: auto; font-family: var(--font-display); font-weight: 600; color: var(--orange-deep); }
