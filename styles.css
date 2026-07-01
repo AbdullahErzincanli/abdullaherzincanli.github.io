@@ -303,6 +303,17 @@ a.game-card-link:hover { transform: translateY(-6px) rotate(-0.6deg); box-shadow
   color: rgba(255, 255, 255, 0.85);
   font-family: var(--font-display); font-size: 0.8rem; text-align: center; padding: 0.5rem;
 }
+.shot {
+  width: 100%; height: auto; display: block;
+  aspect-ratio: 9 / 16; object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform var(--duration-normal, 300ms) ease, box-shadow var(--duration-normal, 300ms) ease;
+}
+.shot:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
 
 /* ---- legal / prose ------------------------------------------------------ */
 .legal { padding-block: clamp(2rem, 4vw, 3.5rem) var(--space-section); }
